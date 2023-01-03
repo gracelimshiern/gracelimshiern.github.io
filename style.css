@@ -14,9 +14,12 @@ body {
   
   }
 
+
 main {
     width: 100%;
 }
+
+
 #education1 h1 {
     font-family: Garamond, serif;
     font-size: 70px;
@@ -27,8 +30,10 @@ main {
 
 .emphasized { font-style: italic; }
 
+
+
 education {
-    background-color: rgb(70, 68, 68);
+    background-color: rgb(192, 188, 188);
     display: flex;
     flex-wrap: wrap;
 }
@@ -328,7 +333,7 @@ resume {
     padding: 1px 13px; /* Some padding */
     font-size: 16px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
-    margin: 25px;
+    margin: 18px;
     height: 35px;
     border-radius: 10rem;
   }
@@ -346,7 +351,7 @@ resume {
     padding: 1px 13px; /* Some padding */
     font-size: 16px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
-    margin: 25px;
+    margin: 18px;
     height: 35px;
     
     border-radius: 10rem;
@@ -376,4 +381,63 @@ resume {
   .btnicons:hover {
     background-color: rgb(228, 190, 224);
     border-radius: 2rem;
+  }
+
+
+  /* flip box code */
+
+
+  #university {
+    font-family: Garamond, serif;
+    border-width:3px; 
+    border-style:solid; 
+    border-color:#9e9999; 
+    /* padding: 10px; */
+    border-radius: 15px;
+    color: white;
+}
+
+
+
+  .flip-box {
+    background-color: transparent;
+    width: 400px;
+    height: 490px;
+    perspective: 1000px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 254, 254);
+    border-radius: 18px;
+  }
+  
+  .flip-box-back {
+    background-color: rgb(170, 167, 170);
+    color: rgb(48, 46, 46);
+    transform: rotateY(180deg);
+    border-radius: 15px;
   }
