@@ -135,7 +135,7 @@ body {
 
 @media screen and (max-width: 1000px) {
   #intro h1 {
-    font-size: 70px;
+    font-size: 4em;
   }
 
   #about {
@@ -145,6 +145,10 @@ body {
 
   #aboutme h2 {
     font-size: 40px;
+  }
+
+  #contactme {
+    
   }
 }
 
