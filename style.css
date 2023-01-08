@@ -13,7 +13,6 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    border: 2px solid pink;
   }
 
 
@@ -21,8 +20,8 @@ main {
     width: 100vw;
     height: 100vh;
     min-height: 100%;
-    border: 1px solid salmon
- 
+
+    
 }
 
 
@@ -127,7 +126,6 @@ resume {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    border: 2px solid green;
     
   }
 
