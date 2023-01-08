@@ -16,14 +16,90 @@ body {
   }
 
 
-main {
-    width: 100vw;
-    height: 100vh;
-    min-height: 100%;
 
-    
+#profilePic {
+  width: 30vw;
 }
 
+#intro {
+  width: 60vw;
+  margin-top: 20px; 
+}
+
+#intro h1 {
+ font-family: didot, serif ;
+ font-size: 70px
+}
+
+#about {
+  color: white;
+  align-self: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;    
+}
+
+#thankyou {
+  color: white;
+  align-self: center;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  margin-bottom: 190px;
+}
+
+#thankyou h1 {
+  font-family: Garamond, serif;
+  font-size: 70px;
+  align-self: center;
+  margin-left: 120px;
+}
+
+
+#thankyou p {
+  font-size: 30px;
+  align-self: center;
+}
+
+#about h1 {
+  align-self: center;
+
+}
+
+#about h2 {
+  font-size: 40px;
+  align-self: center;
+  margin-right: 400px;
+  color: rgb(200, 194, 194);
+}
+
+#about p {
+  font-size: 20px;
+  align-self: center;
+  
+  color: rgb(235, 232, 232);
+}
+
+#about h3 {
+  font-size: 25px;
+  color: white;
+  align-self: center;
+  display: flex;
+  width: 100%;
+  margin-left: 220px;
+}
+
+@media screen and (max-width: 1000px) {
+  #intro h1 {
+    font-size: 70px;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
 
 #education1 h1 {
     font-family: Garamond, serif;
@@ -90,9 +166,7 @@ resume {
     padding: 20px;
     text-align: center;
   }
-  h1 {
-    margin: 0;
-  }
+  
   nav {
     display: flex;
     justify-content: space-between;
@@ -112,73 +186,17 @@ resume {
   }
   main {
     background-color: rgb(35, 34, 34);
-    display: flex;
-    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    overflow: auto;
   }
   section {
     width: 50%;
     padding: 20px;
   }
 
-  #about {
-    color: white;
-    align-self: center;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    
-  }
-
-  #thankyou {
-    color: white;
-    align-self: center;
-    width: 100%;
-    justify-content: space-around;
-    display: flex;
-    margin-bottom: 190px;
-  }
-
-  #thankyou h1 {
-    font-family: Garamond, serif;
-    font-size: 70px;
-    align-self: center;
-    margin-left: 120px;
-  }
   
-
-  #thankyou p {
-    font-size: 30px;
-    align-self: center;
-  }
-  
-  #about h1 {
-    font-size: 70px;
-    align-self: center;
-    margin-right: 400px;
-  }
-
-  #about h2 {
-    font-size: 40px;
-    align-self: center;
-    margin-right: 400px;
-    color: rgb(200, 194, 194);
-  }
-  
-  #about p {
-    font-size: 20px;
-    align-self: center;
-    
-    color: rgb(235, 232, 232);
-  }
-
-  #about h3 {
-    font-size: 25px;
-    color: white;
-    align-self: center;
-    display: flex;
-    width: 100%;
-    margin-left: 220px;
-  }
 
   .bolded { font-weight: bold; }
   .underlined {text-decoration: underline;}
