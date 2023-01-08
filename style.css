@@ -16,9 +16,58 @@ body {
   }
 
 
+  resume {
+    background-color: rgb(35, 34, 34);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  header {
+    background-color: rgb(177, 176, 176);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(126, 124, 124);
+    color: white;
+    padding: 20px;
+    font-size: 19.5px;
+    
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: lightgray;
+  }
+  main {
+    background-color: rgb(35, 34, 34);
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    overflow: auto;
+  }
+  section {
+    width: 50%;
+    padding: 20px;
+  }
+
 
 #profilePic {
   width: 30vw;
+}
+
+#about {
+  color: white;
+  align-self: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;    
 }
 
 #intro {
@@ -31,13 +80,31 @@ body {
  font-size: 70px
 }
 
-#about {
+#aboutme {
+  width: 40vw;
+}
+
+#aboutme h2 {
+  font-size: 40px;
+  align-self: center;
+  color: rgb(200, 194, 194);
+}
+
+#aboutme p {
+  font-size: 20px;
+  align-self: center;
+  color: rgb(235, 232, 232);
+}
+
+#aboutme h3 {
+  font-size: 25px;
   color: white;
   align-self: center;
   display: flex;
   width: 100%;
-  justify-content: space-around;    
+  margin-left: 220px;
 }
+
 
 #thankyou {
   color: white;
@@ -66,29 +133,6 @@ body {
 
 }
 
-#about h2 {
-  font-size: 40px;
-  align-self: center;
-  margin-right: 400px;
-  color: rgb(200, 194, 194);
-}
-
-#about p {
-  font-size: 20px;
-  align-self: center;
-  
-  color: rgb(235, 232, 232);
-}
-
-#about h3 {
-  font-size: 25px;
-  color: white;
-  align-self: center;
-  display: flex;
-  width: 100%;
-  margin-left: 220px;
-}
-
 @media screen and (max-width: 1000px) {
   #intro h1 {
     font-size: 70px;
@@ -98,7 +142,10 @@ body {
     display: flex;
     flex-direction: column;
   }
-  
+
+  #aboutme h2 {
+    font-size: 40px;
+  }
 }
 
 #education1 h1 {
@@ -155,47 +202,6 @@ resume {
 #contactme {
     display: flex;
 }
-resume {
-    background-color: rgb(35, 34, 34);
-    display: flex;
-    flex-wrap: wrap;
-}
-
-  header {
-    background-color: rgb(177, 176, 176);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(126, 124, 124);
-    color: white;
-    padding: 20px;
-    font-size: 19.5px;
-    
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
-  nav a:hover {
-    color: lightgray;
-  }
-  main {
-    background-color: rgb(35, 34, 34);
-    width: 100vw;
-    height: 100vh;
-    min-height: 100%;
-    overflow: auto;
-  }
-  section {
-    width: 50%;
-    padding: 20px;
-  }
-
   
 
   .bolded { font-weight: bold; }
@@ -590,7 +596,7 @@ resume {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 500px;
+    height: 625px;
     width: 750px;
     background: #4e4d4d;
     overflow: hidden;
