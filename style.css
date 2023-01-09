@@ -161,11 +161,8 @@ resume {
   display: flex;
   align-self: center;
   justify-content: center;
-  position: relative;
-}
-
-#education-header {
-  
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
 
 #education-header h1 {
@@ -173,12 +170,11 @@ resume {
     font-size: 70px;
     text-align: center;
     color: white;
-    text-align: center;
   }
 
 #education-content {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 1.05vw;
 }
 
 #education-left {
@@ -463,9 +459,10 @@ resume {
     border: none; 
     color: rgb(43, 41, 41); 
     padding: 1px 13px; 
-    font-size: 16px; 
+    font-size: 0.9vw; 
     cursor: pointer; 
-    height: 35px;
+    height: 2vw;
+    width: auto;
     border-radius: 10rem;
   }
   
@@ -532,8 +529,8 @@ resume {
 
 .flip-box {
     background-color: transparent;
-    width: 25vw;
-    height: 33vw;
+    width: 23vw;
+    height: 29vw;
     perspective: 1000px;
     position: relative;
   }
