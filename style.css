@@ -56,6 +56,7 @@ resume {
   section {
     width: 100vw;
     padding: 20px;
+    margin: 0;
     
   }
 
@@ -157,42 +158,57 @@ resume {
   }
 }
 
+#education-header {
+  margin:0 ;
+  margin-top: 0;
+  padding: 0 ;
+  display: flex;
+}
+
 #education-content {
   display: flex;
   align-self: center;
   justify-content: center;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
 }
 
 #education-header h1 {
     font-family: Garamond, serif;
-    font-size: 70px;
+    font-size: 5vw;
     text-align: center;
     color: white;
+    margin-left: 30%;
   }
 
 #education-content {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.05vw;
+    font-size: 1.2vw;
 }
 
 #education-left {
   width: 30vw;
   text-align: center;
   align-self: center;
+
+
 }
 
 #education-middle {
   width: 30vw;
   text-align: center;
   align-self: center;
+
+
 }
 
 #education-right {
   width: 30vw;
   text-align: center;
   align-self: center;
+  justify-content: center;
+  justify-self: center;
+
+
 }
 
 .emphasized { font-style: italic; }
@@ -204,6 +220,7 @@ resume {
   margin:0 ;
   margin-top: 0;
   top: 0;
+  display: flex;
 }
 
 #experience-header h1 {
@@ -211,7 +228,7 @@ resume {
   font-size: 5vw;
   color: white;
   text-align: center;
-  margin-top: 0px;
+  margin-left: 30%;
 }
 
 #experience-content {
@@ -222,7 +239,7 @@ resume {
 }
 
 #experience-content p {
-  font-size: 1.1vw;
+  font-size: 1.5vw;
 }
 
 #experience-content h2 {
@@ -477,10 +494,10 @@ resume {
     border: none; /* Remove borders */
     color: rgb(93, 91, 91); /* White text */
     padding: 1px 13px; /* Some padding */
-    font-size: 0.9vw; /* Set a font size */
+    font-size: 1.1vw; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
-    margin: 1vw;
-    height: 2vw;
+    margin: 1.5vw;
+    height: 2.5vw;
     border-radius: 10rem;
   }
   
@@ -530,9 +547,10 @@ resume {
 .flip-box {
     background-color: transparent;
     width: 25vw;
-    height: 30vw;
+    height: 31vw;
     perspective: 1000px;
     position: relative;
+    margin-left: 13%;
   }
   
   .flip-box-inner {
@@ -542,7 +560,6 @@ resume {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    width: 25vw;
   }
   
   .flip-box:hover .flip-box-inner {
@@ -561,8 +578,8 @@ resume {
     background-color: rgb(255, 255, 255);
     color: rgb(255, 254, 254);
     border-radius: 18px;
-    width: 23vw;
-    height: 29vw;
+    width: 25vw;
+    height: 31vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -574,7 +591,7 @@ resume {
     transform: rotateY(180deg);
     border-radius: 15px;
     width: 25vw;
-    height: 29vw;
+    height: 31vw;
     
   }
 
