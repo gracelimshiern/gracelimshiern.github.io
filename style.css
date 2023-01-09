@@ -529,8 +529,8 @@ resume {
 
 .flip-box {
     background-color: transparent;
-    width: 23vw;
-    height: 29vw;
+    width: 25vw;
+    height: 35vw;
     perspective: 1000px;
     position: relative;
   }
@@ -560,6 +560,8 @@ resume {
     background-color: rgb(255, 255, 255);
     color: rgb(255, 254, 254);
     border-radius: 18px;
+    width: 23vw;
+    height: 29vw;
     
   }
   
