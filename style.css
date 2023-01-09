@@ -792,26 +792,24 @@ resume {
     
     .flip-box {
       margin-bottom: 8vh;
-      width: 35vw;
+      width: 50vw;
       height: 40vh;
-      
     }
     
     
     .flip-box-front {
-      width: 35vw;
+      width: 50vw;
       height: 40vh;
     }
     
     .flip-box-back {
-      width: 35vw;
+      width: 50vw;
       height: 40vh;
-      
     }
 
     #education-content {
       
-      font-size: 2vw;
+      font-size: 2.5vw;
   }
     
   
