@@ -530,7 +530,7 @@ resume {
 .flip-box {
     background-color: transparent;
     width: 25vw;
-    height: 35vw;
+    height: 30vw;
     perspective: 1000px;
     position: relative;
   }
@@ -542,6 +542,7 @@ resume {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    width: 25vw;
   }
   
   .flip-box:hover .flip-box-inner {
@@ -562,7 +563,9 @@ resume {
     border-radius: 18px;
     width: 23vw;
     height: 29vw;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .flip-box-back {
@@ -570,6 +573,9 @@ resume {
     color: rgb(29, 28, 28);
     transform: rotateY(180deg);
     border-radius: 15px;
+    width: 25vw;
+    height: 29vw;
+    
   }
 
 
