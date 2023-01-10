@@ -35,8 +35,8 @@ resume {
     align-items: center;
     background-color: rgb(126, 124, 124);
     color: white;
-    padding: 20px;
-    font-size: 19.5px;
+    padding: 1vw;
+    font-size: 1.5vw;
     
   }
   nav a {
@@ -46,6 +46,7 @@ resume {
   nav a:hover {
     color: lightgray;
   }
+
 
 
 
@@ -102,6 +103,7 @@ resume {
   font-size: 20px;
   align-self: center;
   color: rgb(235, 232, 232);
+  line-height: 2em;
 }
 
 #aboutme h3 {
@@ -139,6 +141,7 @@ resume {
 #thankyou p {
   font-size: 30px;
   align-self: center;
+  line-height: 2em;
 }
 
 #about h1 {
@@ -284,6 +287,31 @@ experience {
 #experience1 h1{
     font-size: 50px;
 }
+
+#achievement-header {
+  margin:0 ;
+  margin-top: 0;
+  top: 0;
+  display: flex;
+  height: 20vh;
+}
+
+#achievement-header h1 {
+  font-family: Garamond, serif;
+  font-size: 5vw;
+  color: white;
+  text-align: center;
+   margin-left: 30%;
+}
+
+#achievement-content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 1vw;
+  height: 80vh;
+}
+
 
 resume {
     height: 100vh;
@@ -771,6 +799,292 @@ resume {
   .containerscroll:hover .flap::before{
     transform: translatex(-375px);
   }
+
+  /* transition boxes */
+
+  .containerborder {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .image {
+    position: relative;
+    height: 30vw;
+    width: 50vw;
+    border-radius: 25%;
+    background: white;
+    overflow: hidden;
+    transition: 1s ease;
+  }
+  
+  
+  /* another cool thing about CSS is that we can apply individual styling to different elements based off their names with SPECIFICITY. Notice we set the global styling for image classes above; however in our HTML we added a space and then different identifiers for each image element. We will now target each one independently and add different styling to them */
+  .one {
+    background: #766e6a;
+    margin-bottom: 18%;
+  }
+  .two {
+    background: #F75990;
+  }
+  .three {
+    background: #FF5733;
+    z-index: 1;
+  }
+  .four {
+    background: #00DDFF;
+  }
+  .five {
+    background: #0049B7;
+  }
+  
+  #achievement-content h2 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #achievement-content h3 {
+    text-align: center;
+    font-weight: bold;
+  }
+  #achievement-content p {
+    text-align: center;
+    
+  }
+  
+  /* Now we have to style the boxes and move them in place. We will use position: absolute for this and then target the individual elements with SPECIFICITY. We hide tthe elements from being visable before the animation plays by using opacity: 0; but we can achieve a similar result by using overflow: hidden on the image element. */
+  .details-window {
+    height: 25vw;
+    width: 50vw;
+    
+    background: white;
+    position: absolute;
+  }
+  
+  .up {
+    bottom: -83.5%;
+  }
+  .down{
+    top: -72.5%;
+  }
+  .center {
+    bottom: 0;
+    z-index: 2;
+  }
+  .left{
+    bottom: 0%;
+    left: -100%;
+  }
+  .right {
+    bottom: 0%;
+    left: 100%;
+  }
+  
+  /* here we will start to add our animations and transitions */
+  
+  
+  /* we target .image box and specify what element we want to change*/
+  .one:hover .up {
+    transform: translateY(-100%);
+    opacity: 0.7;
+    transition: 1s ease;
+  }
+  .two:hover .down {
+    transform: translateY(139.2%);
+    opacity: 0.7;
+    transition: 1s ease;
+  }
+  /* For this animation we need to set up a keyframe animation to define how our element fades in. We then just call it onto the element we want to use it on */
+  @keyframes fade-in {
+    0% {opacity: 0}
+    50% {opacity: 0.3}
+    100% {opacity: 0.7}
+  }
+  .three:hover .center {
+    animation: fade-in 1s ease;
+    animation-fill-mode: forwards;
+  }
+  .four:hover .left {
+    transform: translateX(100%);
+    opacity: 0.7;
+    transition: 1s ease;
+  }
+  .five:hover .right {
+    transform: translateX(-100%);
+    opacity: 0.7;
+    transition: 1s ease;
+  }
+  
+  /* word animation */
+
+  .containerword {
+    height: 100vh;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+   }
+   
+   
+   
+   /* animation class and keyframes */
+   .overflow-hidden {
+    overflow: hidden;
+   }
+   
+   .drop-in {
+    animation: drop-in 1s ease 200ms backwards;
+   }
+   
+   .drop-in-2 {
+    animation: drop-in 1200ms ease 500ms backwards;
+   }
+   
+   @keyframes drop-in {
+    from {
+     opacity: 0;
+     transform: translateY(-100px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
+  
+
+   /* words */
+
+   @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+   
+
+   .waviy {
+    position: relative;
+    -webkit-box-reflect: below  linear-gradient(transparent, rgba(0,0,0,.2));
+    margin-top: 5%;
+    font-family: Garamond, serif;
+    font-size: 1vw;
+
+  }
+  .waviy span {
+    font-size: 5vw;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+   
+    animation: waviy 2.5s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-13px)
+    }
+  }
+
+  /* word2 */
+
+  .link {
+    padding: 10px;
+  }
+  
+  .textanimation{
+    text-align: center;
+    margin-top: 3%;
+    transform: translateX(-300%);
+    opacity: 0;
+    animation: slide-in-anim 1s ease-out forwards;
+  }
+  
+  @keyframes slide-in-anim {
+    20% {
+      opacity: 0;
+    }
+    60% {
+      transform: translateX(-44%);
+    }
+    75% {
+      transform: translateX(-54%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-49%);
+    }
+  }
+
+  /* word3 */
+  @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+
+.wordcontent {
+  position: relative;
+  margin-bottom: 20%;
+  margin-left: 20%;
+  font-size: 6vw;
+}
+
+.wordcontent h1 {
+  color: rgb(235, 239, 241);
+  position: absolute;
+  transform: translate(-40%, -50%);
+   font-size: 6vw;
+  font-family: Garamond, serif;
+}
+
+.wordcontent h1:nth-child(1) {
+ 
+  -webkit-text-stroke: 2px #e3e6e8;
+  font-size: 6vw;
+}
+
+.wordcontent h1:nth-child(2) {
+  color: #63accd;
+  animation: animate 4s ease-in-out infinite;
+  font-size: 6vw;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+  
+  
+
+
+  
+  /* responsiveness */
 
   @media screen and (max-width: 1000px) {
     #intro h1 {
