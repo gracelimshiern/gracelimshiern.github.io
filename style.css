@@ -1180,13 +1180,13 @@ resume {
     
     
     .flip-box-front {
-      width: 50vw;
-      height: 40vh;
+      width: 60vw;
+      height: 35vh;
     }
     
     .flip-box-back {
-      width: 50vw;
-      height: 40vh;
+      width: 60vw;
+      height: 35vh;
     }
 
     #education-content p{
@@ -1315,11 +1315,6 @@ resume {
     margin-top: 9%;
   }
 
-  html,body {
-    overflow-x: hidden;
-    overflow-y: auto; 
-    }
-
     
     #experience-header h1 {
       font-family: Garamond, serif;
@@ -1392,12 +1387,14 @@ resume {
   }
 
 
-  html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    overflow-y: auto; 
+html {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
