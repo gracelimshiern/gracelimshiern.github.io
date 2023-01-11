@@ -1326,7 +1326,7 @@ resume {
   .nav > .nav-links > a {
     display: block;
     width: 100%;
-    font-size: 3vw;
+    font-size: 6vw;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
