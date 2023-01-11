@@ -759,12 +759,7 @@ resume {
     overflow: auto;
   }
   
-  @media screen and (max-width: 700px){
-    .popup{
-      width: 70%;
-    }
-  }
-
+  
   /* book flip */
 
   .containerscroll  {
@@ -1385,5 +1380,88 @@ resume {
     overflow-x: hidden;
     overflow-y: auto; 
     }
+
+    
+    #experience-header h1 {
+      font-family: Garamond, serif;
+      font-size: 10vw;
+      color: white;
+      text-align: center;
+      
+    }
+    
+    #experience-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      font-size: 1vw;
+      height: 80vh;
+    }
+    
+    #experience-content p {
+      font-size: 3vw;
+    }
+    
+    #experience-content h2 {
+      font-size: 5vw;
+    }
+    
+    #experience-content h3 {
+      font-size: 4vw;
+    }
+    
+    #experience-left {
+      width: 45vw;
+      text-align: center;
+      margin-bottom: 10%;
+    }
+    
+    #experience-right {
+      
+      width: 45vw;
+      text-align: center;
+     margin-bottom: 30%;
+    }
+
+
+    .buttonpopup {
+      font-size: 5em;
+      padding: 50px;
+     border-radius: 20%;
+     width: 50vw;
+     height: 45vw;
+     border: 2px solid rgb(83, 80, 80);
+      
+    }
+    .buttonpopup:hover {
+      background: #5c5b5bed;
+    }
+    
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(27, 26, 26, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 2;
+    }
+    
+    
+    
+
+
+    .popup{
+      width: 80%;
+      height: auto;
+    }
+    
   
   }
