@@ -1194,6 +1194,14 @@ resume {
     width: 100vw;
   }
 
+  #aboutme p{
+    font-size: 4vw;
+  }
+
+  #contactme {
+    width: 100vw;
+  }
+
   .waviy span {
     font-size: 10vw;
     
