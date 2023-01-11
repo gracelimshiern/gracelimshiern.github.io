@@ -1054,7 +1054,7 @@ resume {
 }
 
 .wordcontent h1:nth-child(2) {
-  color: #63accd;
+  color: #36bfcb;
   animation: animate 4s ease-in-out infinite;
   font-size: 4em;
 }
@@ -1198,7 +1198,7 @@ resume {
 
   #intro {
     width: 90vw;
-    height: 90vh;
+    height: 100;
     margin-top: 20px; 
   }
 
@@ -1228,7 +1228,6 @@ resume {
     height: 8vw;
     width: 8vw;
     margin: 3vw;
-    
   }
 
   #channels-header {
