@@ -52,7 +52,7 @@ resume {
   .nav {
     height: 50px;
     width: 100%;
-    background-color: #4d4d4d;
+    background-color: #494848;
     position: relative;
   }
   
@@ -79,13 +79,13 @@ resume {
   
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
+    padding: 13px 35px 13px 35px;
     text-decoration: none;
     color: #efefef;
   }
   
   .nav > .nav-links > a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(135, 129, 129, 0.3);
   }
   
   .nav > #nav-check {
@@ -183,12 +183,7 @@ resume {
   margin-bottom: 190px;
 }
 
-#thankyou h1 {
-  font-family: Garamond, serif;
-  font-size: 70px;
-  align-self: center;
-  margin-left: 120px;
-}
+
 
 
 #thankyou p {
@@ -1080,28 +1075,28 @@ resume {
 .wordcontent {
   position: relative;
   margin-bottom: 25%;
-  margin-left: 18%;
-  font-size: 4em;
+  margin-left: 35%;
+  font-size: 6vw;
 }
 
 .wordcontent h1 {
   color: rgb(235, 239, 241);
   position: absolute;
   transform: translate(-40%, -50%);
-   font-size: 4em;
+   font-size: 6vw;
   font-family: Garamond, serif;
 }
 
 .wordcontent h1:nth-child(1) {
 
   -webkit-text-stroke: 1px #e3e6e8;
-  font-size: 4em;
+  font-size: 6vw;
 }
 
 .wordcontent h1:nth-child(2) {
   color: #36bfcb;
   animation: animate 4s ease-in-out infinite;
-  font-size: 4em;
+  font-size: 6vw;
 }
 
 @keyframes animate {
@@ -1303,7 +1298,7 @@ resume {
     display: inline-block;
     width: 7vw;
     height: 5vh;
-    padding: 1vw;
+    padding: 2vw;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
     background-color: transparent
@@ -1337,8 +1332,39 @@ resume {
     overflow-y: auto;
   }
 
+  .wordcontent {
+    margin-left: 35%;
+    font-size: 15vw;
+    margin-bottom: 30%;
+  }
+  
+  .wordcontent h1 {
+     font-size: 15vw;
+  }
+  
+  .wordcontent h1:nth-child(1) {
+    font-size: 15vw;
+  }
+  
+  .wordcontent h1:nth-child(2) {
+    font-size: 15vw;
+  }
 
+  #thankyou p {
+    font-size: 4vw;
+  }
+
+
+  c{
+    width: 40vw;
+    height: 9vw;
+    text-decoration: none;
+    font-size: 3vw;
+  }
   
-  
+  #welcomebutton {
+    justify-content: center;
+    margin-right: 30%;
+  }
   
   }
