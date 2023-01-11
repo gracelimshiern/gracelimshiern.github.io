@@ -1198,6 +1198,15 @@ resume {
     font-size: 3.5vw;
   }
 
+  #aboutme h2{
+    font-size: 6.5vw;
+  }
+
+  #aboutme h3{
+    font-size: 5vw;
+  }
+
+
   #contactme {
     width: 100vw;
   }
