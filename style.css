@@ -50,8 +50,8 @@ resume {
 
   
   .nav {
-    height: 3vw;
-    width: 100vw;
+    height: 50px;
+    width: 100%;
     background-color: #4d4d4d;
     position: relative;
   }
@@ -59,10 +59,10 @@ resume {
   .nav > .nav-header {
     display: inline;
   }
-
+  
   .nav > .nav-header > .nav-title {
     display: inline-block;
-    font-size: 1.2vw;
+    font-size: 22px;
     color: #fff;
     padding: 10px 10px 10px 10px;
   }
@@ -74,7 +74,7 @@ resume {
   .nav > .nav-links {
     display: inline;
     float: right;
-    font-size: 1.2vw;
+    font-size: 18px;
   }
   
   .nav > .nav-links > a {
@@ -83,16 +83,14 @@ resume {
     text-decoration: none;
     color: #efefef;
   }
-
+  
   .nav > .nav-links > a:hover {
-    color: rgb(143, 137, 137);
+    background-color: rgba(0, 0, 0, 0.3);
   }
   
   .nav > #nav-check {
     display: none;
   }
-  
-
     
   
   main {
