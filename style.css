@@ -536,11 +536,11 @@ resume {
     border: none; /* Remove borders */
     color: rgb(93, 91, 91); /* White text */
     padding: 1px 5px; /* Some padding */
-    font-size: 16px; /* Set a font size */
+    font-size: 1.2vw; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
-    margin: 20px;
-    height: 50px;
-    width: 50px;
+    margin: 1.3vw;
+    height: 3vw;
+    width: 3vw;
     border-radius: 2rem;
   }
   
@@ -1195,7 +1195,7 @@ resume {
   }
 
   #aboutme p{
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   #contactme {
@@ -1204,6 +1204,14 @@ resume {
 
   .waviy span {
     font-size: 10vw;
+    
+  }
+
+  .btnicons {
+    font-size: 3vw;
+    height: 8vw;
+    width: 8vw;
+    margin: 3vw;
     
   }
     
