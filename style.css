@@ -717,6 +717,7 @@ resume {
     width: 30%;
     position: relative;
     transition: all 5s ease-in-out;
+    overflow: auto;
   }
   
   .popup h2 {
@@ -1404,15 +1405,15 @@ resume {
     }
     
     #experience-content p {
-      font-size: 4.5vw;
+      font-size: 4vw;
     }
     
     #experience-content h2 {
-      font-size: 6.5vw;
+      font-size: 6vw;
     }
     
     #experience-content h3 {
-      font-size: 5vw;
+      font-size: 4.5vw;
     }
     
     #experience-left {
@@ -1439,28 +1440,7 @@ resume {
      border: 2px solid rgb(83, 80, 80);
       
     }
-    .buttonpopup:hover {
-      background: #5c5b5bed;
-    }
-    
-    .overlay {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(27, 26, 26, 0.7);
-      transition: opacity 500ms;
-      visibility: hidden;
-      opacity: 0;
-    }
-    .overlay:target {
-      visibility: visible;
-      opacity: 2;
-    }
-    
-    
-    
+
 
 
     .popup{
