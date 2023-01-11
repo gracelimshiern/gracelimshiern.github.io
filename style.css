@@ -1183,6 +1183,21 @@ resume {
     margin: 3vw;
     height: 4vw;
   }
+
+  #intro {
+    width: 100vw;
+    height: 90vh;
+    margin-top: 20px; 
+  }
+
+  #aboutme {
+    width: 100vw;
+  }
+
+  .waviy span {
+    font-size: 10vw;
+    
+  }
     
   
   }
