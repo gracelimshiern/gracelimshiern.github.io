@@ -33,7 +33,7 @@ resume {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(126, 124, 124);
+    background-color: rgb(95, 93, 93);
     color: white;
     padding: 1vw;
     font-size: 1.5vw;
@@ -46,9 +46,6 @@ resume {
   nav a:hover {
     color: lightgray;
   }
-
-
-
 
   
   
@@ -139,9 +136,9 @@ resume {
 
 
 #thankyou p {
-  font-size: 30px;
+  font-size: 2vw;
   align-self: center;
-  line-height: 2em;
+  
 }
 
 #about h1 {
@@ -423,20 +420,21 @@ resume {
   
   c{
     display: block;
-    width: 260px;
-    height: 50px;
+    width: 10vw;
+    height: auto;
     line-height: 50px;
     font-weight: bold;
     text-decoration: none;
     background: rgb(59, 58, 58);
     text-align: center;
+    margin-left: 26.5%;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
     border: 3px solid rgb(255, 255, 255);
     transition: all .35s;
-    margin-left: 130px;
-    margin-top: 40px;
+    font-size: 0.9vw;
+    margin-top: 2.5vw;
     
   }
   
@@ -627,8 +625,8 @@ resume {
   .buttonpopup {
     font-size: 3em;
     padding: 50px;
-    color: rgb(83, 77, 77);
-    background-color: #dfd0e8;
+    color: rgb(232, 226, 226);
+    background-color: rgb(62, 59, 59);
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -636,11 +634,11 @@ resume {
    width: 35vw;
    height: 30vw;
    font-family: Georgia, serif;
-   border: 1px solid rgb(223, 197, 221);
+   border: 2px solid rgb(83, 80, 80);
     
   }
   .buttonpopup:hover {
-    background: #776f78ed;
+    background: #5c5b5bed;
   }
   
   .overlay {
@@ -656,14 +654,14 @@ resume {
   }
   .overlay:target {
     visibility: visible;
-    opacity: 1;
+    opacity: 2;
   }
   
   .popup {
     margin: 70px auto;
     padding: 20px;
-    background: rgb(224, 215, 226);
-    border-radius: 5px;
+    background: rgb(81, 80, 82);
+    border-radius: 25px;
     width: 30%;
     position: relative;
     transition: all 5s ease-in-out;
@@ -671,14 +669,14 @@ resume {
   
   .popup h2 {
     margin-top: 0;
-    color: rgb(63, 61, 61);
+    color: rgb(226, 216, 216);
     font-family: Garamond, serif;
     
   }
 
   .popup h3 {
     margin-top: 0;
-    color: rgb(115, 71, 108);
+    color: rgb(204, 223, 250);
     font-family: Garamond, serif;
     font-size: 20px;
     
@@ -686,7 +684,7 @@ resume {
 
   .popup p {
     margin-top: 0;
-    color: rgb(42, 41, 41);
+    color: rgb(228, 219, 219);
     font-family: Garamond, serif;
     font-size: 10px;
     
@@ -699,10 +697,10 @@ resume {
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: #333;
+    color: rgb(224, 215, 215);
   }
   .popup .close:hover {
-    color: #a599ad;
+    color: #6c696e;
   }
   .popup .content {
     max-height: 70%;
@@ -823,7 +821,7 @@ resume {
   
   /* another cool thing about CSS is that we can apply individual styling to different elements based off their names with SPECIFICITY. Notice we set the global styling for image classes above; however in our HTML we added a space and then different identifiers for each image element. We will now target each one independently and add different styling to them */
   .one {
-    background: #766e6a;
+    background: #484645;
     margin-bottom: 18%;
   }
   .two {
@@ -1024,29 +1022,29 @@ resume {
 
 .wordcontent {
   position: relative;
-  margin-bottom: 20%;
-  margin-left: 20%;
-  font-size: 6vw;
+  margin-bottom: 25%;
+  margin-left: 18%;
+  font-size: 4em;
 }
 
 .wordcontent h1 {
   color: rgb(235, 239, 241);
   position: absolute;
   transform: translate(-40%, -50%);
-   font-size: 6vw;
+   font-size: 4em;
   font-family: Garamond, serif;
 }
 
 .wordcontent h1:nth-child(1) {
- 
-  -webkit-text-stroke: 2px #e3e6e8;
-  font-size: 6vw;
+
+  -webkit-text-stroke: 1px #e3e6e8;
+  font-size: 4em;
 }
 
 .wordcontent h1:nth-child(2) {
   color: #63accd;
   animation: animate 4s ease-in-out infinite;
-  font-size: 6vw;
+  font-size: 4em;
 }
 
 @keyframes animate {
@@ -1079,6 +1077,38 @@ resume {
     );
   }
 }
+
+/* typing effect */
+
+.wrappernew.four {
+  background-color: transparent;
+  font-size: 5vw;
+  margin-right: 70%;
+ 
+}
+.four .type{
+  width: auto;
+  margin: auto;
+}
+.four h1 {
+  width: 11.3ch;
+  border-right: 0.35vw solid rgb(255, 254, 254);
+  margin: 1rem auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1.3s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+}
+@keyframes typing {
+  from {
+      width: 0;
+  }
+}
+@keyframes blink-caret {
+  50% {
+      border-color: transparent;
+  }
+}
+
   
   
 
