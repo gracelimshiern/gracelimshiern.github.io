@@ -1197,8 +1197,8 @@ resume {
   }
 
   #intro {
-    width: 90vw;
-    height: 100;
+    width: 95vw;
+    height: 98vh;
     margin-top: 20px; 
   }
 
@@ -1207,7 +1207,7 @@ resume {
   }
 
   #aboutme p{
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 
   #aboutme h2{
@@ -1219,14 +1219,10 @@ resume {
     
   }
 
-  #channels {
-    width: 83vw;
-  }
-
   .btnicons {
-    font-size: 3vw;
-    height: 8vw;
-    width: 8vw;
+    font-size: 3.8vw;
+    height: 8.5vw;
+    width: 8.5vw;
     margin: 3vw;
   }
 
@@ -1245,7 +1241,7 @@ resume {
   }
 
   .button {
-    font-size: 2.2vw;
+    font-size: 2.8vw;
    
   }
   
