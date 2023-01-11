@@ -572,8 +572,9 @@ resume {
     font-size: 1.1vw; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
     margin: 1.5vw;
-    height: 2.5vw;
+    height: 4vw;
     border-radius: 10rem;
+    width: 12vw;
   }
   
   /* Darker background on mouse-over */
@@ -1446,6 +1447,10 @@ resume {
     .popup{
       width: 80%;
       height: auto;
+    }
+
+    .popup .close {
+      font-size: 6vw;
     }
     
   
