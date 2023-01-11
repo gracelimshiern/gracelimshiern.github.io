@@ -103,13 +103,11 @@ resume {
   line-height: 2em;
 }
 
-#aboutme h3 {
-  font-size: 25px;
+#channels-header {
+  font-size: 1.5vw;
   color: white;
-  align-self: center;
-  display: flex;
-  width: 100%;
-  margin-left: 220px;
+  text-align: center;
+  margin-right: 9vw;
 }
 
 #contactme {
@@ -1191,7 +1189,7 @@ resume {
   }
 
   #aboutme {
-    width: 100vw;
+    width: 85vw;
   }
 
   #aboutme p{
@@ -1202,18 +1200,17 @@ resume {
     font-size: 6.5vw;
   }
 
-  #aboutme h3{
-    font-size: 5vw;
-  }
-
-
   #contactme {
-    width: 100vw;
+    width: 85vw;
   }
 
   .waviy span {
     font-size: 10vw;
     
+  }
+
+  #channels {
+    width: 85vw;
   }
 
   .btnicons {
@@ -1222,6 +1219,11 @@ resume {
     width: 8vw;
     margin: 3vw;
     
+  }
+
+  #channels-header {
+    font-size: 4.5vw;
+    margin-right: 14vw;
   }
     
   
