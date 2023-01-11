@@ -516,11 +516,11 @@ resume {
     width: 200px;
     border: 3px solid #65e1fd;
     background: transparent;
-    color: #48f5f2;
+    color: #7defed;
   }
   
   c:hover + .icon{
-    border: 3px solid #2d9dbd;
+    border: 3px solid #259dbe;
     right: -25%;
   }
 
@@ -1293,12 +1293,14 @@ resume {
     position: absolute;
     right: 0px;
     top: 0px;
+    
   }
   .nav > .nav-btn > label {
     display: inline-block;
     width: 7vw;
     height: 5vh;
     padding: 2vw;
+    
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
     background-color: transparent
@@ -1313,16 +1315,18 @@ resume {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
+    background-color: rgb(23, 22, 22);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 50px;
     left: 0px;
+    
   }
   .nav > .nav-links > a {
     display: block;
     width: 100%;
+    font-size: 3vw;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
@@ -1336,10 +1340,12 @@ resume {
     margin-left: 35%;
     font-size: 15vw;
     margin-bottom: 30%;
+  
   }
   
   .wordcontent h1 {
      font-size: 15vw;
+     
   }
   
   .wordcontent h1:nth-child(1) {
@@ -1356,8 +1362,8 @@ resume {
 
 
   c{
-    width: 40vw;
-    height: 9vw;
+    width: 38vw;
+    height: 8vw;
     text-decoration: none;
     font-size: 3vw;
   }
@@ -1365,6 +1371,12 @@ resume {
   #welcomebutton {
     justify-content: center;
     margin-right: 30%;
+    margin-top: 9%;
   }
+
+  html,body {
+    overflow-x: hidden;
+    overflow-y: auto; 
+    }
   
   }
