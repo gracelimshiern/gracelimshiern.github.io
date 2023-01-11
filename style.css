@@ -1362,6 +1362,10 @@ resume {
     font-size: 4vw;
   }
 
+  #homepage {
+    margin-left: 9%;
+  }
+
 
   c{
     width: 38vw;
@@ -1400,21 +1404,22 @@ resume {
     }
     
     #experience-content p {
-      font-size: 3vw;
+      font-size: 4.5vw;
     }
     
     #experience-content h2 {
-      font-size: 5vw;
+      font-size: 6.5vw;
     }
     
     #experience-content h3 {
-      font-size: 4vw;
+      font-size: 5vw;
     }
     
     #experience-left {
       width: 45vw;
       text-align: center;
       margin-bottom: 10%;
+      
     }
     
     #experience-right {
