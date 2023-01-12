@@ -1462,11 +1462,9 @@ resume {
 
 .carousel-inner {
   display: flex;
-}
-
-.carousel-inner img {
   width: 100%;
 }
+
 
 .prev, .next {
   font-size: 4vw;
