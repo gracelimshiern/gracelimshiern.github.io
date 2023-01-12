@@ -1166,18 +1166,22 @@ resume {
       margin-bottom: 8vh;
       width: 50vw;
       height: 40vh;
+      margin-left: 0vw;
     }
 
     #education-left {
       width: 50vw;
+      margin-right: 10vw;
     }
 
     #education-middle {
       width: 50vw;
+      margin-right: 10vw;
     }
 
     #education-right {
       width: 50vw;
+      margin-right: 10vw;
     }
     
     
