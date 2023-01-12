@@ -60,7 +60,7 @@ resume {
       align-items: flex-end;
       max-height: 0;
       padding: 0;
-      /* overflow: hidden; */
+      
     }
 
     #navbar-menu {
