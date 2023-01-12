@@ -1163,7 +1163,7 @@ resume {
   
     
     .flip-box {
-      margin-bottom: 8vh;
+      margin-bottom: 10vh;
       width: 50vw;
       height: 40vh;
       margin-left: 0vw;
@@ -1187,12 +1187,16 @@ resume {
     
     .flip-box-front {
       width: 60vw;
-      height: 35vh;
+      height: 45vh;
     }
     
     .flip-box-back {
       width: 60vw;
-      height: 35vh;
+      height: 45vh;
+    }
+
+    .flip-box:hover .flip-box-inner {
+      transform: rotateY(180deg);
     }
 
     #education-content p{
