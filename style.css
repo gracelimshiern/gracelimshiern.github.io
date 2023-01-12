@@ -60,15 +60,17 @@ resume {
       align-items: flex-end;
       max-height: 0;
       padding: 0;
-      
+     
     }
-
     #navbar-menu {
       display: block
     }
 
     
-  } */
+  }
+
+   */
+  
   
   
     
@@ -1164,8 +1166,10 @@ resume {
   justify-content: center;
 }
 
+
+
 .carousel-inner img {
-  width: 40%;
+  width: 100%;
   transition: all 0.5s ease;
 }
 
@@ -1469,9 +1473,13 @@ resume {
 .carousel-inner {
   display: flex;
   width: 100%;
+  margin-bottom: 40%;
 }
 
-
+#carouselimage {
+  display: flex;
+  justify-content: center;
+}
 .prev, .next {
   font-size: 4vw;
   width: 1%;
