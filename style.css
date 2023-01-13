@@ -751,6 +751,7 @@ c:hover + .icon {
   font-family: Garamond, serif;
   font-size: 10px;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
@@ -1402,6 +1403,18 @@ c:hover + .icon {
     justify-content: center;
     position: relative;
     height: 80vh;
+  }
+
+  #experience-content p {
+    font-size: 3.8vw;
+  }
+
+  #experience-content h2 {
+    font-size: 4.5vw;
+  }
+
+  #experience-content h3 {
+    font-size: 4vw;
   }
 
   .flip-box-back p {
