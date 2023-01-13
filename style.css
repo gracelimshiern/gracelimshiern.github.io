@@ -50,26 +50,54 @@ resume {
     color: lightgray;
   }
 
-  #navbar-menu {
+#navbar-menu {
     display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 95%;
+    top: 5px
   }
 
-  /* @media screen and (max-width:1000px) {
+
+
+
+
+  @media screen and (max-width:1000px) {
     nav {
       flex-direction: column;
       align-items: flex-end;
       max-height: 0;
       padding: 0;
-     
+      font-size: 1rem;
     }
     #navbar-menu {
-      display: block
+      display: block;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    
+    .navbar-navigation {
+      overflow: hidden;
+      max-height: 200px;
+      transition: max-height 0.35s ease-out;
     }
 
+    .navbar-navigation a {
+      margin-top: 15px;
+      margin-right: 15px;
+    }
+
+    .navbar-navigation.collapse {
+      max-height: 0;
+    }
+
+    #resumeMenu {
+      margin-top: 30px;
+    }
     
   }
 
-   */
+  
   
   
   
@@ -1505,4 +1533,5 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 

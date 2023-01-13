@@ -25,6 +25,7 @@ for (var i = 0; i < images.length; i++) {
 
 images[0].style.display = 'block';
 
-
-
-
+function toggleMenu() {
+    var element = document.getElementById("navbar-navigation");
+    element.classList.toggle("collapse");
+}
