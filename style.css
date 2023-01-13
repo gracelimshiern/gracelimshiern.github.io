@@ -58,18 +58,61 @@ resume {
     top: 5px
   }
 
+  #back-label {
+    display: none;
+    margin-left: 5px;
+  }
+
+  .fa.fa-backward {
+    display: flex;
+    flex-direction: row;
+  }
+
+  navresume {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(60, 57, 57);
+    color: white;
+    padding: 1vw;
+    font-size: 1.2vw;
+    
+  }
+  navresume a {
+    color: white;
+    text-decoration: none;
+  }
+  navresume a:hover {
+    color: lightgray;
+  }
+
 
 
 
 
   @media screen and (max-width:1000px) {
+    #back-label {
+      display: block;
+    }
+
     nav {
       flex-direction: column;
       align-items: flex-end;
       max-height: 0;
       padding: 0;
       font-size: 1rem;
+      background-color: rgb(46, 45, 45);
     }
+
+    navresume {
+      flex-direction: column;
+      align-items: flex-end;
+      max-height: 0;
+      padding: 0;
+      font-size: 1rem;
+      background-color: rgb(35, 34, 34);
+    }
+
     #navbar-menu {
       display: block;
       cursor: pointer;
@@ -98,7 +141,9 @@ resume {
   }
 
   
-  
+  #experience-btn {
+    margin-top: 35px;
+  }
   
   
     

@@ -10,15 +10,16 @@
   </head>
   <body>
    
-    <nav>
-      <a href="resume.html"><i class="fa fa-backward"></i></a>
-      <a href="experience.html">Experience</a>
-      <a href="education.html">Education</a>
-      <a href="achievements.html">Achievements</a>
-      <a href="index.html">
-        <i class="fa fa-home"></i> Home
-     </a>
-    </nav>
+    <nav class="navbar-navigation collapse" id="navbar-navigation">
+      <i onclick="toggleMenu()" id="navbar-menu" class="fa fa-bars"></i>
+        <a id="resumeMenu" href="resume.html"><i class="fa fa-backward"><span id="back-label">Back</span></i></a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="index.html">
+          <i class="fa fa-home"></i> Home
+       </a>
+      </nav>
 
     
 
@@ -104,5 +105,6 @@
       
 
     </resume>
+    <script src="script.js"></script>
   </body>
 </html>
