@@ -54,7 +54,7 @@ resume {
     display: none;
     cursor: pointer;
     position: absolute;
-    left: 95%;
+    left: 93%;
     top: 5px
   }
 
@@ -66,7 +66,7 @@ resume {
 
   .fa.fa-backward {
     display: flex;
-    flex-direction: row;
+    margin-top: 15px;
   }
 
   navresume {
@@ -121,12 +121,12 @@ resume {
     #navbar-menu {
       display: block;
       cursor: pointer;
-      font-size: 20px;
+      font-size: 30px;
     }
     
     .navbar-navigation {
       overflow: hidden;
-      max-height: 200px;
+      max-height: 250px;
       transition: max-height 0.35s ease-out;
     }
 
@@ -149,7 +149,7 @@ resume {
     }
 
     #experience-btn {
-      margin-top: 35px;
+      margin-top: 45px;
     }
   }
   
