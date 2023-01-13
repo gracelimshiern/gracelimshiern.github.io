@@ -1419,13 +1419,13 @@ c:hover + .icon {
   #experience-left {
     width: 70vw;
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 
   #experience-right {
     width: 70vw;
     text-align: center;
-    margin-bottom: 40%;
+    margin-bottom: 15%;
   }
 
   .buttonpopup {
