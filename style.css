@@ -1392,6 +1392,7 @@ c:hover + .icon {
 
   #experience-header {
     margin-top: 5vw;
+    height: auto;
   }
 
   #experience-header h1 {
@@ -1406,6 +1407,7 @@ c:hover + .icon {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    height: auto;
   }
 
   #experience-content p {
@@ -1435,13 +1437,13 @@ c:hover + .icon {
   #experience-left {
     width: 70vw;
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 9vw;
   }
 
   #experience-right {
     width: 70vw;
     text-align: center;
-    margin-bottom: 15%;
+    margin-bottom: 35vw;
   }
 
   .buttonpopup {
