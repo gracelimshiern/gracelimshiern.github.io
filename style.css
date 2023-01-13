@@ -1,172 +1,142 @@
-html,body
-{
-  font-family: Georgia, sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
-  max-width: 100vw;
-  max-height: 100vh; 
-  min-width: 100vw;
-  min-height: 100vw;
-}
-
-
-
-
 resume {
-    background-color: rgb(35, 34, 34);
-    display: flex;
-    flex-wrap: wrap;
-    overflow: auto;
+  background-color: rgb(35, 34, 34);
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 
-  header {
-    background-color: rgb(177, 176, 176);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(60, 57, 57);
-    color: white;
-    padding: 1vw;
-    font-size: 1.2vw;
-    
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
-  nav a:hover {
-    color: lightgray;
-  }
+header {
+  background-color: rgb(177, 176, 176);
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(60, 57, 57);
+  color: white;
+  padding: 1vw;
+  font-size: 1.2vw;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: lightgray;
+}
 
 #navbar-menu {
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    left: 93%;
-    top: 5px
-  }
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  left: 93%;
+  top: 5px;
+}
 
+#back-label {
+  display: none;
+  margin-left: 5px;
+  color: white;
+}
+
+.fa.fa-backward {
+  display: flex;
+  margin-top: 15px;
+}
+
+navresume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(60, 57, 57);
+  color: white;
+  padding: 1vw;
+  font-size: 1.2vw;
+}
+
+navresume a {
+  color: white;
+  text-decoration: none;
+}
+navresume a:hover {
+  color: lightgray;
+}
+
+@media screen and (max-width: 1000px) {
   #back-label {
-    display: none;
-    margin-left: 5px;
-    color: white;
+    display: block;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
   }
 
-  .fa.fa-backward {
-    display: flex;
-    margin-top: 15px;
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+    max-height: 0;
+    padding: 0;
+    font-size: 20px;
+    background-color: rgb(46, 45, 45);
   }
 
   navresume {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(60, 57, 57);
-    color: white;
-    padding: 1vw;
-    font-size: 1.2vw;
-  }
-
-  
-
-  navresume a {
-    color: white;
-    text-decoration: none;
-  }
-  navresume a:hover {
-    color: lightgray;
-  }
-
-
-
-
-
-  @media screen and (max-width:1000px) {
-    #back-label {
-      display: block;
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 20px;
-    }
-
-    nav {
-      flex-direction: column;
-      align-items: flex-end;
-      max-height: 0;
-      padding: 0;
-      font-size: 20px;
-      background-color: rgb(46, 45, 45);
-    }
-
-    navresume {
-      flex-direction: column;
-      align-items: flex-end;
-      max-height: 0;
-      padding: 0;
-      font-size: 20px;
-      background-color: rgb(35, 34, 34);
-    }
-
-    #navbar-menu {
-      display: block;
-      cursor: pointer;
-      font-size: 30px;
-    }
-    
-    .navbar-navigation {
-      overflow: hidden;
-      max-height: 250px;
-      transition: max-height 0.35s ease-out;
-    }
-
-    .navbar-navigation a {
-      margin-top: 15px;
-      margin-right: 15px;
-    }
-
-    .navbar-navigation.collapse {
-      max-height: 0;
-    }
-
-    #resumeMenu {
-      margin-top: 30px;
-    }
-
-    #homeText {
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 20px;
-    }
-
-    #experience-btn {
-      margin-top: 45px;
-    }
-  }
-  
-  
-  
-  
-    
-  
-  main {
+    flex-direction: column;
+    align-items: flex-end;
+    max-height: 0;
+    padding: 0;
+    font-size: 20px;
     background-color: rgb(35, 34, 34);
-    width: 100vw;
-    height: 100vh;
-    min-height: 100%;
-    overflow: auto;
-  }
-  section {
-    width: 100vw;
-    padding: 20px;
-    margin: 0;
-    
   }
 
+  #navbar-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  .navbar-navigation {
+    overflow: hidden;
+    max-height: 250px;
+    transition: max-height 0.35s ease-out;
+  }
+
+  .navbar-navigation a {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+
+  .navbar-navigation.collapse {
+    max-height: 0;
+  }
+
+  #resumeMenu {
+    margin-top: 30px;
+  }
+
+  #homeText {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+  }
+
+  #experience-btn {
+    margin-top: 45px;
+  }
+}
+
+main {
+  background-color: rgb(35, 34, 34);
+  width: 100vw;
+  height: 100vh;
+  min-height: 100%;
+  overflow: auto;
+}
+section {
+  width: 100vw;
+  padding: 20px;
+  margin: 0;
+}
 
 #profilePic {
   width: 40vw;
@@ -177,17 +147,17 @@ resume {
   align-self: center;
   display: flex;
   width: 100%;
-  justify-content: space-around;    
+  justify-content: space-around;
 }
 
 #intro {
   width: 60vw;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 #intro h1 {
- font-family: didot, serif ;
- font-size: 70px
+  font-family: didot, serif;
+  font-size: 70px;
 }
 
 #aboutme {
@@ -222,17 +192,14 @@ resume {
   margin: 2vw;
 }
 
-#channel-break p{
+#channel-break p {
   font-size: 1vw;
-  color:white;
+  color: white;
 }
 
 #contactme {
   display: flex;
- 
-  
 }
-
 
 #thankyou {
   color: white;
@@ -241,22 +208,16 @@ resume {
   justify-content: space-around;
   display: flex;
   margin-bottom: 190px;
-  
 }
-
-
-
 
 #thankyou p {
   font-size: 2vw;
   align-self: center;
-  
 }
 
 #about h1 {
   align-self: center;
 }
-
 
 /* flip cards */
 
@@ -283,7 +244,8 @@ resume {
   transform: rotateY(180deg);
 }
 
-.flip-box-front, .flip-box-back {
+.flip-box-front,
+.flip-box-back {
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -298,13 +260,12 @@ resume {
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
-.flip-box-front img{
+.flip-box-front img {
   max-width: 80%;
   max-height: 80%;
-} 
+}
 
 .flip-box-back {
   background-color: rgb(255, 255, 252);
@@ -313,14 +274,13 @@ resume {
   border-radius: 15px;
   width: 25vw;
   height: 31vw;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
-
 #education-header {
-  margin:0 ;
+  margin: 0;
   margin-top: 0;
-  padding: 0 ;
+  padding: 0;
   display: flex;
   height: 20vh;
   justify-content: center;
@@ -334,24 +294,24 @@ resume {
 }
 
 #education-header h1 {
-    font-family: Garamond, serif;
-    font-size: 5vw;
-    color: white;
-  }
-
-.flip-box-back p{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2vw;
+  font-family: Garamond, serif;
+  font-size: 5vw;
+  color: white;
 }
 
-.flip-box-back h2{
-  font-family: Garamond, serif; 
-  font-size: 1.55vw
+.flip-box-back p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2vw;
+}
+
+.flip-box-back h2 {
+  font-family: Garamond, serif;
+  font-size: 1.55vw;
 }
 
 .flip-box-back h3 {
- font-size: 1.45vw; 
- color: rgb(76, 75, 75);
+  font-size: 1.45vw;
+  color: rgb(76, 75, 75);
 }
 
 #education-left {
@@ -374,13 +334,14 @@ resume {
   justify-self: center;
 }
 
-.emphasized { font-style: italic; }
-
+.emphasized {
+  font-style: italic;
+}
 
 /* experience  */
 
 #experience-header {
-  margin:0 ;
+  margin: 0;
   margin-top: 0;
   top: 0;
   display: flex;
@@ -393,7 +354,6 @@ resume {
   font-size: 5vw;
   color: white;
   text-align: center;
-  
 }
 
 #experience-content {
@@ -423,39 +383,37 @@ resume {
 }
 
 #experience-right {
-  
   width: 45vw;
   text-align: center;
   align-self: center;
 }
 
 achievements {
-    background-color: rgb(70, 68, 68);
-    display: flex;
-    flex-wrap: wrap;
+  background-color: rgb(70, 68, 68);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #experience1 {
-    color: white;
-    align-self: top;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    
-  }
-
-experience {
-    background-color: rgb(70, 68, 68);
-    display: flex;
-    flex-wrap: wrap;
+  color: white;
+  align-self: top;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
-#experience1 h1{
-    font-size: 50px;
+experience {
+  background-color: rgb(70, 68, 68);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#experience1 h1 {
+  font-size: 50px;
 }
 
 #achievement-header {
-  margin:0 ;
+  margin: 0;
   margin-top: 0;
   top: 0;
   display: flex;
@@ -469,7 +427,6 @@ experience {
   font-size: 5vw;
   color: white;
   text-align: center;
- 
 }
 
 #achievement-content {
@@ -480,24 +437,28 @@ experience {
   height: 80vh;
 }
 
-
 resume {
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
-  
+.bolded {
+  font-weight: bold;
+}
+.underlined {
+  text-decoration: underline;
+}
+.boldunderline {
+  font-weight: bold;
+  text-decoration: underline;
+}
 
-  .bolded { font-weight: bold; }
-  .underlined {text-decoration: underline;}
-  .boldunderline { font-weight: bold; text-decoration: underline;}
-
-   /* #introduction {
+/* #introduction {
     color: white;
     margin-left: 200px;
   } */
 
-  /* #introduction h2 {
+/* #introduction h2 {
     font-size: 30px;
   }
 
@@ -505,637 +466,613 @@ resume {
     font-size: 25px;
   } */
 
-  section h2 {
-    margin-top: 0.5;
-  }
-
-
-
-  #intro {
-      align-self: center;
-  }
-
-  @media (max-width: 600px) {
-    section {
-      width: 100%;
- 
-    }
-  }
-
-/* button a */
-  .button {
-    margin-top: 19px;
-    display: inline-block;
-    padding: 1rem 1.5rem;
-    border-radius: 10rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.8vw;
-    letter-spacing: 0.15rem;
-    text-decoration: none;
-    transition: all 0.3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-  }
-  .button:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(212, 183, 218);
-    border-radius: 10rem;
-    z-index: -2;
-  }
-  .button:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: #e8d7e8;
-    transition: all 0.3s;
-    border-radius: 10rem;
-    z-index: -1;
-  }
-  .button:hover {
-    color: #fff;
-  }
-  .button:hover:before {
-    width: 100%;
-  }
-
-
-
-  /* button c  */
-
-  body{
-    font-family: 'Lato', sans-serif;
-    text-decoration: none;
-  }
-  
-  .wrapper{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-decoration: none;
-    padding: 15px;
-  }
-  
-  .link_wrapper{
-    position: relative;
-  }
-  
-  c{
-    display: block;
-    width: 10vw;
-    height: auto;
-    line-height: 50px;
-    font-weight: bold;
-    text-decoration: none;
-    background: rgb(59, 58, 58);
-    text-align: center;
-    margin-left: 26.5%;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border: 3px solid rgb(255, 255, 255);
-    transition: all .35s;
-    font-size: 0.9vw;
-    margin-top: 2.5vw;
-    
-  }
-  
-  .icon{
-    width: 50px;
-    height: 50px;
-    border: 3px solid transparent;
-    position: absolute;
-    transform: rotate(45deg);
-    right: 0;
-    top: 0;
-    z-index: -1;
-    transition: all .35s;
-  }
-  
-  .icon svg{
-    width: 30px;
-    position: absolute;
-    top: calc(50% - 15px);
-    left: calc(50% - 15px);
-    transform: rotate(-45deg);
-    fill: #318dd8;
-    transition: all .35s;
-  }
-  
-  c:hover{
-    width: 200px;
-    border: 3px solid #65e1fd;
-    background: transparent;
-    color: #7defed;
-  }
-  
-  c:hover + .icon{
-    border: 3px solid #259dbe;
-    right: -25%;
-  }
-
-
-  /* Home button */
-
-  
-  .btn {
-    background-color: white; 
-    border: none; 
-    color: rgb(93, 91, 91); 
-    padding: 1px 13px; 
-    font-size: 16px; 
-    cursor: pointer; 
-    margin: 18px;
-    height: 35px;
-    border-radius: 10rem;
-  }
-  
-  /* Darker background on mouse-over */
-  .btn:hover {
-    background-color: rgb(188, 184, 184);
-    border-radius: 10rem;
-  }
-
-  .btndownload {
-    background-color: rgb(195, 192, 192); 
-    border: none; 
-    color: rgb(43, 41, 41); 
-    padding: 1px 13px; 
-    font-size: 0.9vw; 
-    cursor: pointer; 
-    height: 2vw;
-    width: auto;
-    border-radius: 10rem;
-  }
-  
-  /* Darker background on mouse-over */
-  .btndownload:hover {
-    background-color: rgb(127, 122, 122);
-    border-radius: 10rem;
-  }
-
-  .btnback {
-    background-color: white; /* Blue background */
-    border: none; /* Remove borders */
-    color: rgb(93, 91, 91); /* White text */
-    padding: 1px 13px; /* Some padding */
-    font-size: 1.1vw; /* Set a font size */
-    cursor: pointer; /* Mouse pointer on hover */
-    margin: 1.5vw;
-    height: 2.5vw;
-    border-radius: 10rem;
-  }
-  
-  /* Darker background on mouse-over */
-  .btnback:hover {
-    background-color: rgb(188, 184, 184);
-    border-radius: 10rem;
-  }
-
-
-  .btnicons {
-    background-color: white; /* Blue background */
-    border: none; /* Remove borders */
-    color: rgb(93, 91, 91); /* White text */
-    padding: 1px 5px; /* Some padding */
-    font-size: 1.2vw; /* Set a font size */
-    cursor: pointer; /* Mouse pointer on hover */
-    margin: 1.3vw;
-    height: 3vw;
-    width: 3vw;
-    border-radius: 2rem;
-  }
-  
-  /* Darker background on mouse-over */
-  .btnicons:hover {
-    background-color: rgb(228, 190, 224);
-    border-radius: 2rem;
-  }
-
-
-  /* flip box code */
-
-
-  #university {
-    font-family: Garamond, serif;
-    border-width:3px; 
-    border-style:solid; 
-    border-color:#9e9999; 
-    /* padding: 10px; */
-    border-radius: 15px;
-    color: white;
+section h2 {
+  margin-top: 0.5;
 }
 
+#intro {
+  align-self: center;
+}
 
-
-
-
-  /* pop-up button */
-  
-  .buttonpopup {
-    font-size: 3em;
-    padding: 50px;
-    color: rgb(232, 226, 226);
-    background-color: rgb(54, 53, 53);
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-   border-radius: 20%;
-   width: 35vw;
-   height: 30vw;
-   font-family: Georgia, serif;
-   border: 2px solid rgb(83, 80, 80);
-
-    
-  }
-  .buttonpopup:hover {
-    background: #5c5b5bed;
-  }
-  
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(27, 26, 26, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-  }
-  .overlay:target {
-    visibility: visible;
-    opacity: 2;
-  }
-  
-  .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: rgb(81, 80, 82);
-    border-radius: 25px;
-    width: 30%;
-    position: relative;
-    transition: all 5s ease-in-out;
-    overflow: auto;
-  }
-  
-  .popup h2 {
-    margin-top: 0;
-    color: rgb(226, 216, 216);
-    font-family: Garamond, serif;
-    
-  }
-
-  .popup h3 {
-    margin-top: 0;
-    color: rgb(204, 223, 250);
-    font-family: Garamond, serif;
-    font-size: 20px;
-    
-  }
-
-  .popup p {
-    margin-top: 0;
-    color: rgb(228, 219, 219);
-    font-family: Garamond, serif;
-    font-size: 10px;
-    
-  }
-  .popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(224, 215, 215);
-  }
-  .popup .close:hover {
-    color: #6c696e;
-  }
-  .popup .content {
-    max-height: 70%;
-    overflow: auto;
-  }
-  
-  
-  /* book flip */
-
-  .containerscroll  {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 625px;
-    width: 750px;
-    background: #4e4d4d;
-    overflow: hidden;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 0 0 20px 8px #d0d0d0;
-    margin-top: 5px;
-    
-  }
-  
-  .contentscroll {
-    position: absolute;
-    top: 50%;
-    transform: translatey(-50%);
-    text-align: justify;
-    color: black;
-    padding: 40px;
-    font-family:  palatino; 
-    font-size: 25px;
-    margin-top: 15px;
-  }
-  
-  .containerscroll h1 {
-    text-align: center;
-    color:#aea9a9;
-  }
-
-  .containerscroll  h3 {
-    color:#b8a3c0;
-    font-family:  'Times New Roman', Times,serif;
-    
-  }
-
-  .containerscroll p {
-    color:#ffffff;
-    font-family:  'Times New Roman', Times,serif;  
-  }
-
-  
-  .flap {
+@media (max-width: 600px) {
+  section {
     width: 100%;
-    height: 100%;
   }
-  
-  .flap::before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 50%;
-    background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white;
-    background-position: 100px;
-    background-repeat: no-repeat;
-    transition: 1s;
-    background-color: #696e70;
-  }
-  
-  .flap::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 50%;
-    right: 0;
-    background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white;
-    background-position: -200px;
-    background-repeat: no-repeat;
-    transition: 1s;
-    background-color: #81898b;
-  }
-  
-  .containerscroll:hover .flap::after {
-    transform: translatex(375px);
-  }
-  
-  .containerscroll:hover .flap::before{
-    transform: translatex(-375px);
-  }
+}
 
-  /* transition boxes */
+/* button a */
+.button {
+  margin-top: 19px;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8vw;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(212, 183, 218);
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #e8d7e8;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover:before {
+  width: 100%;
+}
 
-  .containerborder {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .image {
-    position: relative;
-    height: 30vw;
-    width: 50vw;
-    border-radius: 25%;
-    background: white;
-    overflow: hidden;
-    transition: 1s ease;
-  }
-  
-  
-  /* another cool thing about CSS is that we can apply individual styling to different elements based off their names with SPECIFICITY. Notice we set the global styling for image classes above; however in our HTML we added a space and then different identifiers for each image element. We will now target each one independently and add different styling to them */
-  .one {
-    background: #484645;
-    margin-bottom: 18%;
-  }
-  .two {
-    background: #F75990;
-  }
-  .three {
-    background: #FF5733;
-    z-index: 1;
-  }
-  .four {
-    background: #00DDFF;
-  }
-  .five {
-    background: #0049B7;
-  }
-  
-  #achievement-content h2 {
-    text-align: center;
-    font-weight: bold;
-  }
+/* button c  */
 
-  #achievement-content h3 {
-    text-align: center;
-    font-weight: bold;
-  }
-  #achievement-content p {
-    text-align: center;
-    
-  }
-  
-  /* Now we have to style the boxes and move them in place. We will use position: absolute for this and then target the individual elements with SPECIFICITY. We hide tthe elements from being visable before the animation plays by using opacity: 0; but we can achieve a similar result by using overflow: hidden on the image element. */
-  .details-window {
-    height: 25vw;
-    width: 50vw;
-    
-    background: white;
-    position: absolute;
-  }
-  
-  .up {
-    bottom: -83.5%;
-  }
-  .down{
-    top: -72.5%;
-  }
-  .center {
-    bottom: 0;
-    z-index: 2;
-  }
-  .left{
-    bottom: 0%;
-    left: -100%;
-  }
-  .right {
-    bottom: 0%;
-    left: 100%;
-  }
-  
-  /* here we will start to add our animations and transitions */
-  
-  
-  /* we target .image box and specify what element we want to change*/
-  .one:hover .up {
-    transform: translateY(-100%);
-    opacity: 0.7;
-    transition: 1s ease;
-  }
-  .two:hover .down {
-    transform: translateY(139.2%);
-    opacity: 0.7;
-    transition: 1s ease;
-  }
-  /* For this animation we need to set up a keyframe animation to define how our element fades in. We then just call it onto the element we want to use it on */
-  @keyframes fade-in {
-    0% {opacity: 0}
-    50% {opacity: 0.3}
-    100% {opacity: 0.7}
-  }
-  .three:hover .center {
-    animation: fade-in 1s ease;
-    animation-fill-mode: forwards;
-  }
-  .four:hover .left {
-    transform: translateX(100%);
-    opacity: 0.7;
-    transition: 1s ease;
-  }
-  .five:hover .right {
-    transform: translateX(-100%);
-    opacity: 0.7;
-    transition: 1s ease;
-  }
-  
-  /* word animation */
+body {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+}
 
-  .containerword {
-    height: 100vh;
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-   }
-   
-   
-   
-   /* animation class and keyframes */
-   .overflow-hidden {
-    overflow: hidden;
-   }
-   
-   .drop-in {
-    animation: drop-in 1s ease 200ms backwards;
-   }
-   
-   .drop-in-2 {
-    animation: drop-in 1200ms ease 500ms backwards;
-   }
-   
-   @keyframes drop-in {
-    from {
-     opacity: 0;
-     transform: translateY(-100px);
-    }
-    to {
-     opacity: 1;
-     transform: translate(0px);
-    }
-   }
-  
+.wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  padding: 15px;
+}
 
-   /* words */
+.link_wrapper {
+  position: relative;
+}
 
-   @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-   
+c {
+  display: block;
+  width: 10vw;
+  height: auto;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: rgb(59, 58, 58);
+  text-align: center;
+  margin-left: 26.5%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid rgb(255, 255, 255);
+  transition: all 0.35s;
+  font-size: 0.9vw;
+  margin-top: 2.5vw;
+}
 
-   .waviy {
-    position: relative;
-    -webkit-box-reflect: below  linear-gradient(transparent, rgba(0,0,0,.2));
-    margin-top: 5%;
-    font-family: Garamond, serif;
-    font-size: 1vw;
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.35s;
+}
 
-  }
-  .waviy span {
-    font-size: 5vw;
-    position: relative;
-    display: inline-block;
-    color: #fff;
-   
-    animation: waviy 2.5s infinite;
-    animation-delay: calc(.1s * var(--i));
-    
-  }
-  @keyframes waviy {
-    0%,40%,100% {
-      transform: translateY(0)
-    }
-    20% {
-      transform: translateY(-13px)
-    }
-  }
+.icon svg {
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #318dd8;
+  transition: all 0.35s;
+}
 
-  /* word2 */
+c:hover {
+  width: 200px;
+  border: 3px solid #65e1fd;
+  background: transparent;
+  color: #7defed;
+}
 
-  .link {
-    padding: 10px;
-  }
-  
-  .textanimation{
-    text-align: center;
-    margin-top: 3%;
-    transform: translateX(-300%);
+c:hover + .icon {
+  border: 3px solid #259dbe;
+  right: -25%;
+}
+
+/* Home button */
+
+.btn {
+  background-color: white;
+  border: none;
+  color: rgb(93, 91, 91);
+  padding: 1px 13px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 18px;
+  height: 35px;
+  border-radius: 10rem;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(188, 184, 184);
+  border-radius: 10rem;
+}
+
+.btndownload {
+  background-color: rgb(195, 192, 192);
+  border: none;
+  color: rgb(43, 41, 41);
+  padding: 1px 13px;
+  font-size: 0.9vw;
+  cursor: pointer;
+  height: 2vw;
+  width: auto;
+  border-radius: 10rem;
+}
+
+/* Darker background on mouse-over */
+.btndownload:hover {
+  background-color: rgb(127, 122, 122);
+  border-radius: 10rem;
+}
+
+.btnback {
+  background-color: white; /* Blue background */
+  border: none; /* Remove borders */
+  color: rgb(93, 91, 91); /* White text */
+  padding: 1px 13px; /* Some padding */
+  font-size: 1.1vw; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  margin: 1.5vw;
+  height: 2.5vw;
+  border-radius: 10rem;
+}
+
+/* Darker background on mouse-over */
+.btnback:hover {
+  background-color: rgb(188, 184, 184);
+  border-radius: 10rem;
+}
+
+.btnicons {
+  background-color: white; /* Blue background */
+  border: none; /* Remove borders */
+  color: rgb(93, 91, 91); /* White text */
+  padding: 1px 5px; /* Some padding */
+  font-size: 1.2vw; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  margin: 1.3vw;
+  height: 3vw;
+  width: 3vw;
+  border-radius: 2rem;
+}
+
+/* Darker background on mouse-over */
+.btnicons:hover {
+  background-color: rgb(228, 190, 224);
+  border-radius: 2rem;
+}
+
+/* flip box code */
+
+#university {
+  font-family: Garamond, serif;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #9e9999;
+  /* padding: 10px; */
+  border-radius: 15px;
+  color: white;
+}
+
+/* pop-up button */
+
+.buttonpopup {
+  font-size: 3em;
+  padding: 50px;
+  color: rgb(232, 226, 226);
+  background-color: rgb(54, 53, 53);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  border-radius: 20%;
+  width: 35vw;
+  height: 30vw;
+  font-family: Georgia, serif;
+  border: 2px solid rgb(83, 80, 80);
+}
+.buttonpopup:hover {
+  background: #5c5b5bed;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(27, 26, 26, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 2;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: rgb(81, 80, 82);
+  border-radius: 25px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  overflow: auto;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: rgb(226, 216, 216);
+  font-family: Garamond, serif;
+}
+
+.popup h3 {
+  margin-top: 0;
+  color: rgb(204, 223, 250);
+  font-family: Garamond, serif;
+  font-size: 20px;
+}
+
+.popup p {
+  margin-top: 0;
+  color: rgb(228, 219, 219);
+  font-family: Garamond, serif;
+  font-size: 10px;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(224, 215, 215);
+}
+.popup .close:hover {
+  color: #6c696e;
+}
+.popup .content {
+  max-height: 70%;
+  overflow: auto;
+}
+
+/* book flip */
+
+.containerscroll {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 625px;
+  width: 750px;
+  background: #4e4d4d;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  margin-top: 5px;
+}
+
+.contentscroll {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: justify;
+  color: black;
+  padding: 40px;
+  font-family: palatino;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.containerscroll h1 {
+  text-align: center;
+  color: #aea9a9;
+}
+
+.containerscroll h3 {
+  color: #b8a3c0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.containerscroll p {
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.flap {
+  width: 100%;
+  height: 100%;
+}
+
+.flap::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg")
+    white;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+  background-color: #696e70;
+}
+
+.flap::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg")
+    white;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+  background-color: #81898b;
+}
+
+.containerscroll:hover .flap::after {
+  transform: translatex(375px);
+}
+
+.containerscroll:hover .flap::before {
+  transform: translatex(-375px);
+}
+
+/* transition boxes */
+
+.containerborder {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image {
+  position: relative;
+  height: 30vw;
+  width: 50vw;
+  border-radius: 25%;
+  background: white;
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+/* another cool thing about CSS is that we can apply individual styling to different elements based off their names with SPECIFICITY. Notice we set the global styling for image classes above; however in our HTML we added a space and then different identifiers for each image element. We will now target each one independently and add different styling to them */
+.one {
+  background: #484645;
+  margin-bottom: 18%;
+}
+.two {
+  background: #f75990;
+}
+.three {
+  background: #ff5733;
+  z-index: 1;
+}
+.four {
+  background: #00ddff;
+}
+.five {
+  background: #0049b7;
+}
+
+#achievement-content h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#achievement-content h3 {
+  text-align: center;
+  font-weight: bold;
+}
+#achievement-content p {
+  text-align: center;
+}
+
+/* Now we have to style the boxes and move them in place. We will use position: absolute for this and then target the individual elements with SPECIFICITY. We hide tthe elements from being visable before the animation plays by using opacity: 0; but we can achieve a similar result by using overflow: hidden on the image element. */
+.details-window {
+  height: 25vw;
+  width: 50vw;
+
+  background: white;
+  position: absolute;
+}
+
+.up {
+  bottom: -83.5%;
+}
+.down {
+  top: -72.5%;
+}
+.center {
+  bottom: 0;
+  z-index: 2;
+}
+.left {
+  bottom: 0%;
+  left: -100%;
+}
+.right {
+  bottom: 0%;
+  left: 100%;
+}
+
+/* here we will start to add our animations and transitions */
+
+/* we target .image box and specify what element we want to change*/
+.one:hover .up {
+  transform: translateY(-100%);
+  opacity: 0.7;
+  transition: 1s ease;
+}
+.two:hover .down {
+  transform: translateY(139.2%);
+  opacity: 0.7;
+  transition: 1s ease;
+}
+/* For this animation we need to set up a keyframe animation to define how our element fades in. We then just call it onto the element we want to use it on */
+@keyframes fade-in {
+  0% {
     opacity: 0;
-    animation: slide-in-anim 1s ease-out forwards;
   }
-  
-  @keyframes slide-in-anim {
-    20% {
-      opacity: 0;
-    }
-    60% {
-      transform: translateX(10%);
-    }
-    75% {
-      transform: translateX(-5%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0%);
-    }
+  50% {
+    opacity: 0.3;
   }
+  100% {
+    opacity: 0.7;
+  }
+}
+.three:hover .center {
+  animation: fade-in 1s ease;
+  animation-fill-mode: forwards;
+}
+.four:hover .left {
+  transform: translateX(100%);
+  opacity: 0.7;
+  transition: 1s ease;
+}
+.five:hover .right {
+  transform: translateX(-100%);
+  opacity: 0.7;
+  transition: 1s ease;
+}
 
-  /* word3 */
-  @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+/* word animation */
 
+.containerword {
+  height: 100vh;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* animation class and keyframes */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.drop-in {
+  animation: drop-in 1s ease 200ms backwards;
+}
+
+.drop-in-2 {
+  animation: drop-in 1200ms ease 500ms backwards;
+}
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+/* words */
+
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  margin-top: 5%;
+  font-family: Garamond, serif;
+  font-size: 1vw;
+}
+.waviy span {
+  font-size: 5vw;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+
+  animation: waviy 2.5s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-13px);
+  }
+}
+
+/* word2 */
+
+.link {
+  padding: 10px;
+}
+
+.textanimation {
+  text-align: center;
+  margin-top: 3%;
+  transform: translateX(-300%);
+  opacity: 0;
+  animation: slide-in-anim 1s ease-out forwards;
+}
+
+@keyframes slide-in-anim {
+  20% {
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(10%);
+  }
+  75% {
+    transform: translateX(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/* word3 */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 .wordcontent {
   position: relative;
@@ -1148,12 +1085,11 @@ resume {
   color: rgb(235, 239, 241);
   position: absolute;
   transform: translate(-40%, -50%);
-   font-size: 6vw;
+  font-size: 6vw;
   font-family: Garamond, serif;
 }
 
 .wordcontent h1:nth-child(1) {
-
   -webkit-text-stroke: 1px #e3e6e8;
   font-size: 6vw;
 }
@@ -1201,9 +1137,8 @@ resume {
   background-color: transparent;
   font-size: 5vw;
   margin-right: 70%;
- 
 }
-.four .type{
+.four .type {
   width: auto;
   margin: auto;
 }
@@ -1213,20 +1148,20 @@ resume {
   margin: 1rem auto;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 1.3s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+  animation: typing 1.3s steps(13, end),
+    blink-caret 0.5s step-end infinite alternate;
 }
 @keyframes typing {
   from {
-      width: 0;
+    width: 0;
   }
 }
 @keyframes blink-caret {
   50% {
-      border-color: transparent;
+    border-color: transparent;
   }
 }
 
-  
 /* slideshow */
 
 .carousel {
@@ -1234,7 +1169,6 @@ resume {
   overflow: hidden;
   position: relative;
   text-align: center;
-
 }
 
 .carousel-inner {
@@ -1243,19 +1177,18 @@ resume {
   justify-content: center;
 }
 
-
-
 .carousel-inner img {
   width: 100%;
   transition: all 0.5s ease;
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 30%;
   width: 10%;
-  
+
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -1263,7 +1196,7 @@ resume {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   display: flex;
-  
+
   justify-content: center;
 }
 
@@ -1272,129 +1205,118 @@ resume {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  color: rgba(0, 0, 0, 0.8);
 }
 
+/* responsiveness */
 
-  
-  /* responsiveness */
-
-  @media screen and (max-width: 1000px) {
-    #intro h1 {
-      font-size: 4.5em;
-    }
-  
-    #about {
-      display: flex;
-      flex-direction: column;
-      align-self: center;
-      
-    }
-  
-    #aboutme h2 {
-      font-size: 40px;
-    }
-  
-    #education-content {
-      display: flex;
-      flex-direction: column;
-    
-    }
-  
-    #education-header {
-      font-size: 8vh;
-      margin-bottom: 30vh;
-      
-    }
-
-    #education-header h1{
-      font-size: 7vh;
-    }
-  
-    
-    .flip-box {
-      margin-bottom: 10vh;
-      width: 50vw;
-      height: 40vh;
-      margin-left: 0vw;
-    }
-
-    #education-left {
-      width: 50vw;
-      margin-right: 10vw;
-    }
-
-    #education-middle {
-      width: 50vw;
-      margin-right: 10vw;
-    }
-
-    #education-right {
-      width: 50vw;
-      margin-right: 10vw;
-    }
-    
-    
-    .flip-box-front {
-      width: 60vw;
-      height: 45vh;
-    }
-    
-    .flip-box-back {
-      width: 60vw;
-      height: 45vh;
-      padding-bottom: 2vw;
-    }
-
-    .flip-box:hover .flip-box-inner {
-      transform: rotateY(180deg);
-    }
-
-    #flip-box-back p{
-      font-size: 3vw;
+@media screen and (max-width: 1000px) {
+  #intro h1 {
+    font-size: 4.5em;
   }
 
-  #flip-box-back h2{
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  #aboutme h2 {
+    font-size: 40px;
+  }
+
+  #education-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #education-header {
+    font-size: 8vh;
+    margin-bottom: 30vh;
+  }
+
+  #education-header h1 {
+    font-size: 7vh;
+  }
+
+  .flip-box {
+    margin-bottom: 10vh;
+    width: 50vw;
+    height: 40vh;
+    margin-left: 0vw;
+  }
+
+  #education-left {
+    width: 50vw;
+    margin-right: 10vw;
+  }
+
+  #education-middle {
+    width: 50vw;
+    margin-right: 10vw;
+  }
+
+  #education-right {
+    width: 50vw;
+    margin-right: 10vw;
+  }
+
+  .flip-box-front {
+    width: 60vw;
+    height: 45vh;
+  }
+
+  .flip-box-back {
+    width: 60vw;
+    height: 45vh;
+    padding-bottom: 2vw;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  #flip-box-back p {
     font-size: 3vw;
   }
 
-  #flip-box-back h3{
+  #flip-box-back h2 {
+    font-size: 3vw;
+  }
+
+  #flip-box-back h3 {
     font-size: 2.5vw;
   }
 
   .btndownload {
     padding: 1vw 1vw;
-    font-size: 2vw; 
-   
-    height: 4vw;
-   
-   
-  }
+    font-size: 2vw;
 
+    height: 4vw;
+  }
 
   #intro {
     width: 85vw;
     height: 95vh;
-    margin-top: 20px; 
-    
+    margin-top: 20px;
   }
 
   #aboutme {
     width: 85vw;
   }
 
-  #aboutme p{
+  #aboutme p {
     font-size: 4vw;
   }
 
-  #aboutme h2{
+  #aboutme h2 {
     font-size: 6.5vw;
   }
 
   .waviy span {
     font-size: 10vw;
-    
   }
 
   .btnicons {
@@ -1412,42 +1334,34 @@ resume {
   #channel-break {
     margin: 0vw;
   }
-  
-  #channel-break p{
+
+  #channel-break p {
     font-size: 2.7vw;
-    color:white;
+    color: white;
   }
 
   .button {
     font-size: 2.8vw;
-   
   }
 
   /* nav mobile */
 
-  
-    
-  
-
   /* welcome word */
-
 
   .wordcontent {
     margin-left: 35%;
     font-size: 15vw;
     margin-bottom: 30%;
-  
   }
-  
+
   .wordcontent h1 {
-     font-size: 15vw;
-     
+    font-size: 15vw;
   }
-  
+
   .wordcontent h1:nth-child(1) {
     font-size: 15vw;
   }
-  
+
   .wordcontent h1:nth-child(2) {
     font-size: 15vw;
   }
@@ -1460,128 +1374,116 @@ resume {
     margin-left: 9%;
   }
 
-
-  c{
+  c {
     width: 38vw;
     height: 8vw;
     text-decoration: none;
     font-size: 3vw;
   }
-  
+
   #welcomebutton {
     justify-content: center;
     margin-right: 30%;
     margin-top: 9%;
   }
 
-    
-    #experience-header h1 {
-      font-family: Garamond, serif;
-      font-size: 10vw;
-      color: white;
-      text-align: center;
-      
-    }
-    
-    #experience-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: relative;
-      height: 80vh;
-    }
-    
-    .flip-box-back p {
-      font-size: 3vw;
-    }
-    
-    .flip-box-back h2 {
-      font-size: 4vw;
-    }
-    
-    .flip-box-back h3 {
-      font-size: 3.2vw;
-    }
-    
-    #experience-left {
-      width: 70vw;
-      text-align: center;
-      margin-bottom: 10%;
-      
-    }
-    
-    #experience-right {
-      width: 70vw;
-      text-align: center;
-     margin-bottom: 40%;
-     
-    }
+  #experience-header h1 {
+    font-family: Garamond, serif;
+    font-size: 10vw;
+    color: white;
+    text-align: center;
+  }
 
+  #experience-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 80vh;
+  }
 
-    .buttonpopup {
-      font-size: 6em;
-     border-radius: 20%;
-     width: 70vw;
-     height: 60vw;
-     border: 2px solid rgb(83, 80, 80);
-      
-    }
+  .flip-box-back p {
+    font-size: 3vw;
+  }
 
-    .popup{
-      width: 80%;
-      height: auto;
-    }
+  .flip-box-back h2 {
+    font-size: 4vw;
+  }
 
-    .popup .close {
-      font-size: 6vw;
-    }
+  .flip-box-back h3 {
+    font-size: 3.2vw;
+  }
 
-    /* slideshow */
+  #experience-left {
+    width: 70vw;
+    text-align: center;
+    margin-bottom: 10%;
+  }
 
-    #achievement-header h1 {
-      margin-top: 10%;
-      font-size: 10vw;
-    }
+  #experience-right {
+    width: 70vw;
+    text-align: center;
+    margin-bottom: 40%;
+  }
 
-.carousel {
-  width: 100%;
+  .buttonpopup {
+    font-size: 6em;
+    border-radius: 20%;
+    width: 70vw;
+    height: 60vw;
+    border: 2px solid rgb(83, 80, 80);
+  }
+
+  .popup {
+    width: 80%;
+    height: auto;
+  }
+
+  .popup .close {
+    font-size: 6vw;
+  }
+
+  /* slideshow */
+
+  #achievement-header h1 {
+    margin-top: 10%;
+    font-size: 10vw;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  .carousel-inner {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40%;
+  }
+
+  #carouselimage {
+    display: flex;
+    justify-content: center;
+  }
+  .prev,
+  .next {
+    font-size: 4vw;
+    width: 1%;
+    top: 30%;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+  }
 }
 
-.carousel-inner {
-  display: flex;
-  width: 100%;
-  margin-bottom: 40%;
-}
-
-#carouselimage {
-  display: flex;
-  justify-content: center;
-}
-.prev, .next {
-  font-size: 4vw;
-  width: 1%;
-  top: 30%;
-}
-
-.carousel-inner img {
-  width: 100%;
-}
-
-  
-  
-}
-
-
-html {
+html,
+body {
   margin: 0;
+  padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  max-width: 100vw;
+  max-height: 100vh;
+  min-width: 100vw;
+  min-height: 100vw;
 }
-
-
-html {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-
