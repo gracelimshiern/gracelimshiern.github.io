@@ -77,8 +77,10 @@ resume {
     color: white;
     padding: 1vw;
     font-size: 1.2vw;
-    
   }
+
+  
+
   navresume a {
     color: white;
     text-decoration: none;
@@ -95,7 +97,7 @@ resume {
     #back-label {
       display: block;
       font-family: 'Times New Roman', Times, serif;
-      font-size: 1rem;
+      font-size: 20px;
     }
 
     nav {
@@ -103,7 +105,7 @@ resume {
       align-items: flex-end;
       max-height: 0;
       padding: 0;
-      font-size: 1rem;
+      font-size: 20px;
       background-color: rgb(46, 45, 45);
     }
 
@@ -112,7 +114,7 @@ resume {
       align-items: flex-end;
       max-height: 0;
       padding: 0;
-      font-size: 1rem;
+      font-size: 20px;
       background-color: rgb(35, 34, 34);
     }
 
@@ -143,14 +145,15 @@ resume {
 
     #homeText {
       font-family: 'Times New Roman', Times, serif;
-      font-size: 1rem;
+      font-size: 20px;
     }
-    
+
+    #experience-btn {
+      margin-top: 35px;
+    }
   }
   
-  #experience-btn {
-    margin-top: 35px;
-  }
+  
   
   
     
