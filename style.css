@@ -1379,14 +1379,14 @@ c:hover + .icon {
 
   c {
     width: 38vw;
-    height: 10vw;
+    height: auto;
     text-decoration: none;
     font-size: 3vw;
   }
 
   #welcomebutton {
     justify-content: center;
-    margin-right: 30%;
+    margin-right: 20%;
     margin-top: 9%;
   }
 
@@ -1402,7 +1402,7 @@ c:hover + .icon {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    height: 80vh;
+    height: 100vh;
   }
 
   #experience-content p {
