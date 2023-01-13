@@ -1,52 +1,47 @@
 <!DOCTYPE html>
 <html>
   <link type="text/css" rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume | Grace Lim</title>
-    
   </head>
   <body>
-  
     <nav class="navbar-navigation collapse" id="navbar-navigation">
-    <i onclick="toggleMenu()" id="navbar-menu" class="fa fa-bars"></i>
-      <a id="resumeMenu" href="resume.html"><i class="fa fa-backward"><span id="back-label">Back</span></i></a>
+      <i onclick="toggleMenu()" id="navbar-menu" class="fa fa-bars"></i>
+      <a id="resumeMenu" href="resume.html"
+        ><i class="fa fa-backward"><span id="back-label">Back</span></i></a
+      >
       <a href="experience.html">Experience</a>
       <a href="education.html">Education</a>
       <a href="achievements.html">Achievements</a>
-      <a id="homeText" href="index.html">
-        <i class="fa fa-home"></i> Home
-     </a>
+      <a id="homeText" href="index.html"> <i class="fa fa-home"></i> Home </a>
     </nav>
 
-
-    <resume style ="background-color: rgb(46, 45, 45);">
-
-     
-        <section id="achievement-header" style = "padding: 0px; "> 
-         
-          <!-- <h1 style = " color: white;"> Achievement </h1> -->
-          <h1 class="textanimation" >Achievements</h1> 
-        </section>
-
+    <resume style="background-color: rgb(46, 45, 45)">
+      <section id="achievement-header" style="padding: 0px">
+        <!-- <h1 style = " color: white;"> Achievement </h1> -->
+        <h1 class="textanimation">Achievements</h1>
+      </section>
 
       <div class="carousel">
         <div class="carousel-inner">
-          <div id = "carouselimage">
-          <img src="deans.png">
-          <img src="orbital.png">
-          <img src="is.png">
-          <img src="courses.png">
-        </div>
+          <div id="carouselimage">
+            <img src="deans.png" />
+            <img src="orbital.png" />
+            <img src="is.png" />
+            <img src="courses.png" />
+          </div>
         </div>
         <a class="prev" onclick="prev()">&#10094;</a>
         <a class="next" onclick="next()">&#10095;</a>
       </div>
-
-      
     </resume>
     <script src="script.js"></script>
   </body>
- 
 </html>
