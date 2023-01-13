@@ -32,8 +32,8 @@ nav a:hover {
   display: none;
   cursor: pointer;
   position: absolute;
-  left: 93%;
-  top: 5px;
+  margin-right: 20px;
+  top: 10px;
 }
 
 #back-label {
