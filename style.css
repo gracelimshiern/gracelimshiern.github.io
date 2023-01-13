@@ -1402,7 +1402,6 @@ c:hover + .icon {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    height: 100vh;
   }
 
   #experience-content p {
