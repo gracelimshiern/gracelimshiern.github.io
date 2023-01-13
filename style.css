@@ -1366,16 +1366,19 @@ c:hover + .icon {
   }
 
   #thankyou p {
-    font-size: 4vw;
+    font-size: 4.5vw;
+    line-height: 1em;
   }
 
   #homepage {
     margin-left: 9%;
+    margin-top: 15%;
+    align-content: center;
   }
 
   c {
     width: 38vw;
-    height: 11.5vw;
+    height: 10vw;
     text-decoration: none;
     font-size: 3vw;
   }
