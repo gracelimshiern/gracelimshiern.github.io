@@ -61,6 +61,7 @@ resume {
   #back-label {
     display: none;
     margin-left: 5px;
+    color: white;
   }
 
   .fa.fa-backward {
@@ -93,6 +94,8 @@ resume {
   @media screen and (max-width:1000px) {
     #back-label {
       display: block;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1rem;
     }
 
     nav {
@@ -137,9 +140,13 @@ resume {
     #resumeMenu {
       margin-top: 30px;
     }
+
+    #homeText {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1rem;
+    }
     
   }
-
   
   #experience-btn {
     margin-top: 35px;
