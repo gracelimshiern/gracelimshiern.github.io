@@ -1482,7 +1482,7 @@ resume {
 .prev, .next {
   font-size: 4vw;
   width: 1%;
-  top: 40%;
+  top: 30%;
 }
 
 .carousel-inner img {
