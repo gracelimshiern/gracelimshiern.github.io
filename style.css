@@ -1462,7 +1462,9 @@ c:hover + .icon {
   #carouselimage {
     display: flex;
     justify-content: center;
+    width: 80%;
   }
+
   .prev,
   .next {
     font-size: 4vw;
@@ -1471,7 +1473,7 @@ c:hover + .icon {
   }
 
   .carousel-inner img {
-    width: 80%;
+    width: 100%;
   }
 }
 
