@@ -1230,11 +1230,13 @@ c:hover + .icon {
   #education-content {
     display: flex;
     flex-direction: column;
+    /* added here */
+    height: auto;
   }
 
   #education-header {
     font-size: 8vh;
-    margin-bottom: 34vh;
+    /* margin-bottom: 34vh; */
   }
 
   #education-header h1 {
