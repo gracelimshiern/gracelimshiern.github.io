@@ -228,6 +228,7 @@ section {
   position: relative;
   margin-left: 13%;
   margin-bottom: 35vh;
+  z-index: 2;
 }
 
 .flip-box-inner {
@@ -318,14 +319,12 @@ section {
   width: 30vw;
   text-align: center;
   align-self: center;
-  z-index: 3;
 }
 
 #education-middle {
   width: 30vw;
   text-align: center;
   align-self: center;
-  z-index: 2;
 }
 
 #education-right {
@@ -334,7 +333,6 @@ section {
   align-self: center;
   justify-content: center;
   justify-self: center;
-  z-index: 1;
 }
 
 .emphasized {
