@@ -1232,10 +1232,12 @@ c:hover + .icon {
     flex-direction: column;
     /* added here */
     height: auto;
+    z-index: 1;
   }
 
   #education-header {
     font-size: 8vh;
+    z-index: 2;
     height: auto;
   }
 
