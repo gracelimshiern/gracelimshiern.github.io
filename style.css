@@ -1236,6 +1236,7 @@ c:hover + .icon {
 
   #education-header {
     font-size: 8vh;
+    height: auto;
   }
 
   #education-header h1 {
