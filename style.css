@@ -34,7 +34,7 @@ nav a:hover {
   position: absolute;
   margin-right: 20px;
   top: 10px;
-  z-index: 99999;
+  z-index: 9999;
 }
 
 #back-label {
@@ -228,7 +228,6 @@ section {
   position: relative;
   margin-left: 13%;
   margin-bottom: 35vh;
-  z-index: 2;
 }
 
 .flip-box-inner {
@@ -297,7 +296,6 @@ section {
   font-family: Garamond, serif;
   font-size: 5vw;
   color: white;
-  z-index: 4;
 }
 
 .flip-box-back p {
@@ -1238,7 +1236,6 @@ c:hover + .icon {
 
   #education-header {
     font-size: 8vh;
-    /* margin-bottom: 34vh; */
   }
 
   #education-header h1 {
