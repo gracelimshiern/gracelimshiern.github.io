@@ -1240,6 +1240,7 @@ c:hover + .icon {
 
   #education-header h1 {
     font-size: 7vh;
+    z-index: 3;
   }
 
   .flip-box {
@@ -1247,6 +1248,7 @@ c:hover + .icon {
     width: 50vw;
     height: 40vh;
     margin-left: 0vw;
+    z-index: 2;
   }
 
   #education-left {
