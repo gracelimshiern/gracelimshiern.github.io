@@ -44,7 +44,6 @@ nav a:hover {
 
 .fa.fa-backward {
   display: flex;
-  margin-top: 15px;
 }
 
 navresume {
@@ -1494,6 +1493,10 @@ c:hover + .icon {
 
   .carousel-inner img {
     width: 100%;
+  }
+
+  .fa.fa-backward {
+    margin-top: 15px;
   }
 }
 
