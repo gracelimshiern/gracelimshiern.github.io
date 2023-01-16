@@ -1162,54 +1162,6 @@ c:hover + .icon {
   }
 }
 
-/* slideshow */
-
-.carousel {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-}
-
-.carousel-inner {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.carousel-inner img {
-  width: 100%;
-  transition: all 0.5s ease;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 30%;
-  width: 10%;
-
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 2vw;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  display: flex;
-
-  justify-content: center;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-  color: rgba(0, 0, 0, 0.8);
-}
-
 /* responsiveness */
 
 @media screen and (max-width: 1000px) {
@@ -1474,37 +1426,12 @@ c:hover + .icon {
     font-size: 10vw;
   }
 
-  /* slideshow */
-
-  .carousel {
-    width: 100%;
-  }
-
-  .carousel-inner {
-    display: flex;
-    width: 100%;
-    margin-bottom: 40%;
-  }
-
-  #carouselimage {
-    display: flex;
-    justify-content: center;
-    width: 85%;
-  }
-
-  .prev,
-  .next {
-    font-size: 4vw;
-    width: 1%;
-    top: 30%;
-  }
-
-  .carousel-inner img {
-    width: 100%;
-  }
-
   .fa.fa-backward {
     margin-top: 15px;
+  }
+
+  .carousel-item img {
+    width: 80%;
   }
 }
 
@@ -1533,4 +1460,26 @@ body {
     min-width: 100vw;
     min-height: 100vh;
   }
+}
+
+.collapse {
+  display: flex;
+}
+
+.navbar-navigation a:hover {
+  text-decoration: none;
+}
+
+.carousel {
+  width: 100vw;
+  margin-bottom: 5%;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+#achievement-header h1 {
+  font-family: Garamond, serif;
+  font-weight: bold;
 }
