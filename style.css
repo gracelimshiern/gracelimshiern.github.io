@@ -1447,21 +1447,6 @@ body {
   min-height: 100vh;
 }
 
-@media screen and (max-width: 1000px) {
-  body {
-    max-width: 100vw;
-    max-height: auto;
-    min-width: 100vw;
-    min-height: 100vh;
-  }
-  html {
-    max-width: 100vw;
-    max-height: auto;
-    min-width: 100vw;
-    min-height: 100vh;
-  }
-}
-
 .collapse {
   display: flex;
 }
@@ -1482,4 +1467,27 @@ body {
 #achievement-header h1 {
   font-family: Garamond, serif;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    max-width: 100vw;
+    max-height: auto;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  html {
+    max-width: 100vw;
+    max-height: auto;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  .carousel-control-next {
+    width: 10vw;
+  }
+
+  .carousel-control-prev {
+    width: 10vw;
+  }
 }
